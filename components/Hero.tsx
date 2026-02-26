@@ -50,8 +50,7 @@ export const Hero: React.FC = () => {
 
             {/* Sub-headline */}
             <p className="text-base sm:text-lg text-gray-400 mb-10 max-w-lg leading-relaxed">
-              Heating, cooling, boilers, and more — trusted by Massachusetts homeowners for over 20 years.
-              One call handles it all.
+              Heat pump installation and energy-efficient heating and cooling upgrades for Massachusetts homeowners. One call handles it all.
             </p>
 
             {/* CTAs */}
