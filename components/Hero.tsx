@@ -84,8 +84,8 @@ export const Hero: React.FC = () => {
                   <Clock className="text-brand-orange" size={20} />
                 </div>
                 <div className="text-xs sm:text-sm">
-                  <div className="text-white font-bold">Same Day</div>
-                  <div className="text-gray-500 text-xs">Service</div>
+                  <div className="text-white font-bold">Mass Save®</div>
+                  <div className="text-gray-500 text-xs">Installer</div>
                 </div>
               </div>
               <div className="flex items-center gap-2 sm:gap-3">
