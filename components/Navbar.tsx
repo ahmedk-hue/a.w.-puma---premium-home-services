@@ -5,9 +5,9 @@ import { Button } from './ui/Button';
 
 // Define services with icons for reuse in mega menu and elsewhere
 export const SERVICES = [
-  { name: 'Furnace', href: '/services/furnace', icon: Flame, description: 'High-efficiency furnace installation & repair', color: 'text-orange-500', bgColor: 'bg-orange-50' },
-  { name: 'Mini Splits', href: '/services/mini-splits', icon: Wind, description: 'Ductless heating & cooling solutions', color: 'text-blue-500', bgColor: 'bg-blue-50' },
   { name: 'Heat Pump', href: '/services/heat-pump', icon: ThermometerSun, description: 'Energy-efficient heat pump systems', color: 'text-green-500', bgColor: 'bg-green-50' },
+  { name: 'Mini Splits', href: '/services/mini-splits', icon: Wind, description: 'Ductless heating & cooling solutions', color: 'text-blue-500', bgColor: 'bg-blue-50' },
+  { name: 'Furnace', href: '/services/furnace', icon: Flame, description: 'High-efficiency furnace installation & repair', color: 'text-orange-500', bgColor: 'bg-orange-50' },
   { name: 'Air Conditioner', href: '/services/ac', icon: Snowflake, description: 'Central AC installation & service', color: 'text-cyan-500', bgColor: 'bg-cyan-50' },
   { name: 'Boiler', href: '/services/boiler', icon: Construction, description: 'Boiler repair, replacement & maintenance', color: 'text-red-500', bgColor: 'bg-red-50' },
   { name: 'Water Heaters', href: '/services/water-heaters', icon: Droplets, description: 'Tankless & traditional water heater service', color: 'text-indigo-500', bgColor: 'bg-indigo-50' },
