@@ -41,8 +41,13 @@ const faqs: FAQItem[] = [
   }
 ];
 
-export const FAQ: React.FC = () => {
+interface FAQProps {
+  items?: FAQItem[];
+}
+
+export const FAQ: React.FC<FAQProps> = ({ items }) => {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
+  const displayFaqs = items || faqs;
 
   return (
     <section id="faq" className="py-24 bg-white">
@@ -53,7 +58,7 @@ export const FAQ: React.FC = () => {
         </div>
 
         <div className="space-y-4">
-          {faqs.map((faq, index) => (
+          {displayFaqs.map((faq, index) => (
             <div
               key={index}
               className={`border rounded-xl transition-all duration-200 ${openIndex === index ? 'border-brand-orange bg-brand-cream' : 'border-gray-200 bg-white'}`}
@@ -73,7 +78,7 @@ export const FAQ: React.FC = () => {
               </button>
 
               <div
-                className={`transition-all duration-300 ease-in-out overflow-hidden ${openIndex === index ? 'max-h-48 opacity-100' : 'max-h-0 opacity-0'
+                className={`transition-all duration-300 ease-in-out overflow-hidden ${openIndex === index ? 'max-h-[500px] opacity-100' : 'max-h-0 opacity-0'
                   }`}
               >
                 <div className="p-6 pt-0 text-brand-gray leading-relaxed">

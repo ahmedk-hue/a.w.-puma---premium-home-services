@@ -4,8 +4,28 @@ import { SEO } from '../../components/SEO';
 import { Link } from 'react-router-dom';
 import { ShieldCheck, Wind, Snowflake, Wrench, ThermometerSnowflake, Ruler, MapPin, CheckCircle2 } from 'lucide-react';
 import { ServiceAreas } from '../../components/ServiceAreas';
+import { FAQ } from '../../components/FAQ';
 
 export const AirConditioner: React.FC = () => {
+    const acFaqs = [
+        {
+            question: "How long does a typical central AC unit last in Massachusetts?",
+            answer: "Most central air conditioning systems last between 15–20 years with proper annual maintenance. However, factors like coastal salt air or heavy summer usage can affect this lifespan. If your unit is over 15 years old, a proactive high-efficiency upgrade is often more cost-effective than a major repair."
+        },
+        {
+            question: "Why is my AC unit frozen or icing up?",
+            answer: "Icing is usually caused by restricted airflow (dirty filters or blocked vents) or low refrigerant levels. If you see ice on your indoor or outdoor unit, turn it off immediately to prevent compressor damage and contact a professional to diagnose the root cause."
+        },
+        {
+            question: "Are there rebates for installing a high-efficiency AC?",
+            answer: "Yes! Mass Save® offers significant rebates for central air conditioning systems that meet specific energy efficiency ratings (SEER2/EER2). We'll guide you through the latest equipment requirements to ensure your new system qualifies for the maximum available financial incentives."
+        },
+        {
+            question: "What's the best way to improve my AC's efficiency?",
+            answer: "Beyond annual professional tuning, the best ways to improve efficiency are replacing air filters monthly, using a programmable thermostat, and ensuring your outdoor condenser is clear of debris. These simple steps reduce the workload on your system and lower your summer electric bills."
+        }
+    ];
+
     return (
         <div className="bg-white">
             <SEO
@@ -29,8 +49,8 @@ export const AirConditioner: React.FC = () => {
 
                 <div className="relative z-10 max-w-5xl mx-auto px-4 w-full text-center">
                     <div className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-white/10 border border-blue-300/50 shadow-[0_0_15px_rgba(147,197,253,0.3)] backdrop-blur-md mb-8">
-                        <Snowflake size={20} className="text-blue-300" />
-                        <span className="text-sm font-bold text-white uppercase tracking-widest">Stay Cool All Summer</span>
+                        <Wind size={20} className="text-blue-300" />
+                        <span className="text-sm font-bold text-white uppercase tracking-widest">High-Efficiency Cooling Experts</span>
                     </div>
 
                     <h1 className="text-4xl md:text-5xl lg:text-7xl font-serif font-bold tracking-tight text-white mb-6 leading-tight drop-shadow-2xl">
@@ -49,14 +69,14 @@ export const AirConditioner: React.FC = () => {
                     </div>
 
                     <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
-                        <a href="tel:6176183366" className="w-full sm:w-auto">
+                        <Link to="/contact" className="w-full sm:w-auto">
                             <button className="w-full sm:w-auto px-8 py-4 bg-brand-orange hover:bg-orange-600 text-white text-lg font-bold rounded-md transition-colors shadow-lg flex justify-center items-center gap-2">
-                                Book AC Repair
+                                Free Installation Estimate
                             </button>
-                        </a>
+                        </Link>
                         <Link to="/contact" className="w-full sm:w-auto">
                             <button className="w-full sm:w-auto px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white text-lg font-bold rounded-md transition-colors shadow-lg flex justify-center items-center gap-2 border border-white/10">
-                                Free AC Installation Estimate
+                                View Efficiency Rebates
                             </button>
                         </Link>
                     </div>
@@ -77,8 +97,8 @@ export const AirConditioner: React.FC = () => {
                 <div className="max-w-7xl mx-auto px-4">
                     <div className="grid lg:grid-cols-2 gap-16 items-center">
                         <div>
-                            <span className="text-blue-600 font-bold uppercase tracking-widest text-sm mb-2 flex items-center gap-2 block"><Wrench size={18} className="inline-block mb-1" /> Rapid Response</span>
-                            <h2 className="text-3xl md:text-4xl font-serif font-bold text-brand-navy mb-6">24-Hour Emergency AC Repair</h2>
+                            <span className="text-blue-600 font-bold uppercase tracking-widest text-sm mb-2 flex items-center gap-2 block"><CheckCircle2 size={18} className="inline-block mb-1" /> Precision Performance</span>
+                            <h2 className="text-3xl md:text-4xl font-serif font-bold text-brand-navy mb-6">The High-Efficiency Advantage</h2>
                             <p className="text-lg text-brand-gray leading-relaxed mb-6">
                                 Is your AC blowing warm air, making loud noises, or freezing up into a block of ice? <strong>We understand how brutal and humid Massachusetts summers can get.</strong>
                             </p>
@@ -87,11 +107,11 @@ export const AirConditioner: React.FC = () => {
                             </p>
 
                             <div className="flex flex-col sm:flex-row gap-4">
-                                <a href="tel:6176183366">
+                                <Link to="/contact">
                                     <button className="w-full sm:w-auto px-6 py-3 bg-brand-orange hover:bg-orange-600 text-white font-bold rounded-md transition-colors flex justify-center items-center gap-2 shadow-md">
-                                        <Wrench size={18} /> Call For Emergency Repair
+                                        <Wind size={18} /> Explore High-Efficiency AC
                                     </button>
-                                </a>
+                                </Link>
                             </div>
                         </div>
                         <div className="relative">
@@ -143,7 +163,10 @@ export const AirConditioner: React.FC = () => {
                 </div>
             </section>
 
-            {/* SECTION 4: SERVICE AREAS (Interactive Map) */}
+            {/* SECTION 4: FAQ SECTION */}
+            <FAQ items={acFaqs} />
+
+            {/* SECTION 5: SERVICE AREAS (Interactive Map) */}
             <ServiceAreas />
 
             {/* BOTTOM CTA */}
@@ -153,14 +176,14 @@ export const AirConditioner: React.FC = () => {
                     <p className="text-lg text-brand-gray mb-10 max-w-2xl mx-auto">Get fast AC repairs or upgrade to a perfectly sized, ultra-efficient cooling system today.</p>
 
                     <div className="flex flex-col sm:flex-row justify-center gap-4">
-                        <a href="tel:6176183366" className="w-full sm:w-auto">
+                        <Link to="/contact" className="w-full sm:w-auto">
                             <button className="w-full sm:w-auto px-8 py-4 bg-brand-orange hover:bg-orange-600 text-white text-lg font-bold rounded-md transition-colors shadow-lg flex justify-center items-center gap-2">
-                                Book AC Repair
+                                Free Installation Estimate
                             </button>
-                        </a>
+                        </Link>
                         <Link to="/contact" className="w-full sm:w-auto">
                             <button className="w-full sm:w-auto px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white text-lg font-bold rounded-md transition-colors shadow-lg flex justify-center items-center gap-2">
-                                Free AC Installation Estimate
+                                View Efficiency Rebates
                             </button>
                         </Link>
                     </div>

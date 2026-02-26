@@ -4,8 +4,28 @@ import { SEO } from '../../components/SEO';
 import { Link } from 'react-router-dom';
 import { ShieldCheck, Flame, Wrench, ThermometerSnowflake, DollarSign, MapPin, CheckCircle2 } from 'lucide-react';
 import { ServiceAreas } from '../../components/ServiceAreas';
+import { FAQ } from '../../components/FAQ';
 
 export const Furnace: React.FC = () => {
+    const furnaceFaqs = [
+        {
+            question: "How do I know if my furnace needs to be replaced?",
+            answer: "If your furnace is over 15–20 years old, requires frequent repairs, or your energy bills are rising despite normal use, it's likely time for a replacement. Signs like uneven heating, strange noises, or a yellow burner flame also indicate it's reaching the end of its lifespan."
+        },
+        {
+            question: "What is AFUE and why does it matter?",
+            answer: "AFUE stands for Annual Fuel Utilization Efficiency. It measures how efficiently a furnace converts fuel into heat. A 98% AFUE rating means 98 cents of every dollar spent on fuel becomes heat for your home, with only 2% escaping through the vent. High-efficiency models significantly lower operating costs."
+        },
+        {
+            question: "Are gas furnaces eligible for Mass Save® rebates?",
+            answer: "Yes, many high-efficiency gas furnaces are eligible for Mass Save® rebates. However, state incentives are increasingly favoring heat pump technology for whole-home heating. We'll help you navigate the latest rebate requirements to ensure you get the maximum savings possible."
+        },
+        {
+            question: "How often should I have my furnace professionally serviced?",
+            answer: "We recommend professional maintenance at least once a year, ideally in the fall before the heavy heating season begins. Regular tuning preserves your warranty, prevents mid-winter breakdowns, and maintains peak efficiency."
+        }
+    ];
+
     return (
         <div className="bg-white">
             <SEO
@@ -53,11 +73,11 @@ export const Furnace: React.FC = () => {
                                 Get a Replacement Estimate
                             </button>
                         </Link>
-                        <a href="tel:6176183366" className="w-full sm:w-auto">
+                        <Link to="/contact" className="w-full sm:w-auto">
                             <button className="w-full sm:w-auto px-10 py-5 bg-brand-navy hover:bg-[#153760] text-white text-xl font-bold rounded-md transition-all shadow-xl flex justify-center items-center gap-2 border border-white/20 transform hover:scale-105">
-                                <Flame size={20} /> Emergency Service
+                                <DollarSign size={20} /> View Mass Save Rebates
                             </button>
-                        </a>
+                        </Link>
                     </div>
                 </div>
             </section>
@@ -144,7 +164,10 @@ export const Furnace: React.FC = () => {
                 </div>
             </section>
 
-            {/* SECTION 4: SERVICE AREAS (Interactive Map) */}
+            {/* SECTION 4: FAQ SECTION */}
+            <FAQ items={furnaceFaqs} />
+
+            {/* SECTION 5: SERVICE AREAS (Interactive Map) */}
             <ServiceAreas />
 
             {/* BOTTOM CTA */}

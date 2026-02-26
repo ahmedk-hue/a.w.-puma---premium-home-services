@@ -2,10 +2,30 @@ import React from 'react';
 import { Button } from '../../components/ui/Button';
 import { SEO } from '../../components/SEO';
 import { Link } from 'react-router-dom';
-import { ShieldCheck, Zap, ThermometerSnowflake, Wrench, MapPin, CheckCircle2 } from 'lucide-react';
+import { ShieldCheck, Zap, ThermometerSnowflake, Wrench, MapPin, CheckCircle2, DollarSign } from 'lucide-react';
 import { ServiceAreas } from '../../components/ServiceAreas';
+import { FAQ } from '../../components/FAQ';
 
 export const HeatPump: React.FC = () => {
+    const heatPumpFaqs = [
+        {
+            question: "How does a heat pump work in cold Massachusetts winters?",
+            answer: "Modern cold-climate heat pumps are designed to extract heat from outdoor air even when temperatures drop well below zero. They use advanced variable-speed compressors and specialized refrigerants to provide reliable, consistent warmth throughout the harshest MA winters."
+        },
+        {
+            question: "Can a heat pump completely replace my existing furnace or boiler?",
+            answer: "Yes! Whole-home electric heat pump conversions are becoming the standard for energy-conscious homeowners. A properly sized system can handle all your heating and cooling needs in a single, ultra-efficient unit, eliminating the need for fossil fuels."
+        },
+        {
+            question: "What is the $16,000 Mass Save® rebate?",
+            answer: "The $16,000 rebate is a state-level incentive for qualifying homeowners who switch to a whole-home electric heat pump system. As a certified contractor, we guide you through the required home energy audit and installation process to help you secure the maximum possible rebate."
+        },
+        {
+            question: "Do heat pumps require a backup heating source?",
+            answer: "While modern units can handle extreme cold, some homeowners choose to keep their existing fossil-fuel system as a secondary 'dual-fuel' backup. However, for most well-insulated homes, a high-performance heat pump is more than capable of serving as the primary and only heat source."
+        }
+    ];
+
     return (
         <div className="bg-white">
             <SEO
@@ -48,14 +68,14 @@ export const HeatPump: React.FC = () => {
                     </div>
 
                     <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
-                        <a href="tel:6176183366" className="w-full sm:w-auto">
-                            <button className="w-full sm:w-auto px-8 py-4 bg-brand-orange hover:bg-orange-600 text-white text-lg font-bold rounded-md transition-colors shadow-lg flex justify-center items-center gap-2">
-                                Call Now
-                            </button>
-                        </a>
                         <Link to="/contact" className="w-full sm:w-auto">
-                            <button className="w-full sm:w-auto px-8 py-4 bg-brand-navy hover:bg-[#153760] text-white text-lg font-bold rounded-md transition-colors shadow-lg flex justify-center items-center gap-2">
-                                Get Free Quote
+                            <button className="w-full sm:w-auto px-8 py-4 bg-brand-orange hover:bg-orange-600 text-white text-lg font-bold rounded-md transition-colors shadow-lg flex justify-center items-center gap-2">
+                                Free Installation Estimate
+                            </button>
+                        </Link>
+                        <Link to="/contact" className="w-full sm:w-auto">
+                            <button className="w-full sm:w-auto px-8 py-4 bg-brand-navy hover:bg-[#153760] text-white text-lg font-bold rounded-md transition-colors shadow-lg flex justify-center items-center gap-2 border border-white/20">
+                                <DollarSign size={20} /> View Mass Save Rebates
                             </button>
                         </Link>
                     </div>
@@ -67,7 +87,7 @@ export const HeatPump: React.FC = () => {
                 <div className="max-w-7xl mx-auto px-4 flex justify-around items-center text-white">
                     <div className="flex items-center gap-3 font-bold text-2xl"><Zap size={32} className="text-brand-orange" /> Up to $16,000 in Rebates</div>
                     <div className="w-px h-12 bg-white/20"></div>
-                    <div className="flex items-center gap-3 font-bold text-2xl"><Wrench size={32} className="text-brand-orange" /> 24/7 Emergency Repair</div>
+                    <div className="flex items-center gap-3 font-bold text-2xl"><ShieldCheck size={32} className="text-brand-orange" /> Mass Save® Partner</div>
                 </div>
             </div>
 
@@ -107,21 +127,21 @@ export const HeatPump: React.FC = () => {
                 <div className="max-w-7xl mx-auto px-4">
                     <div className="grid lg:grid-cols-2 gap-16 items-center">
                         <div>
-                            <span className="text-brand-orange font-bold uppercase tracking-widest text-sm mb-2 flex items-center gap-2 block"><ThermometerSnowflake size={18} className="inline-block mb-1" /> 24/7 Emergency Service</span>
-                            <h2 className="text-3xl md:text-4xl font-serif font-bold text-brand-navy mb-6">Fast, Reliable Heat Pump Repair & Maintenance</h2>
+                            <span className="text-brand-orange font-bold uppercase tracking-widest text-sm mb-2 flex items-center gap-2 block"><CheckCircle2 size={18} className="inline-block mb-1" /> Licensed Experts</span>
+                            <h2 className="text-3xl md:text-4xl font-serif font-bold text-brand-navy mb-6">The High-Efficiency Advantage</h2>
                             <p className="text-lg text-brand-gray leading-relaxed mb-6">
-                                Is your heat pump blowing cold air, icing up during a winter freeze, or making strange grinding noises? <strong>Don't wait.</strong>
+                                Why switch to a heat pump? Unlike traditional systems that generate heat through combustion, heat pumps <strong>move heat</strong>, making them up to 300% efficient.
                             </p>
                             <p className="text-lg text-brand-gray leading-relaxed mb-8">
-                                Our licensed HVAC technicians are on standby 24/7 to diagnose and fix your system fast. We carry parts for all major heat pump brands to restore your home's heat or air conditioning immediately.
+                                This revolutionary technology allows you to heat and cool your home with a single, emission-free system while qualifying for the largest state-level energy incentives available.
                             </p>
 
                             <div className="flex flex-col sm:flex-row gap-4">
-                                <a href="tel:6176183366">
+                                <Link to="/contact">
                                     <button className="w-full sm:w-auto px-6 py-3 bg-brand-orange hover:bg-orange-600 text-white font-bold rounded-md transition-colors flex justify-center items-center gap-2">
-                                        <Wrench size={18} /> Request Emergency Repair
+                                        <Zap size={18} /> Explore Sustainable Heating
                                     </button>
-                                </a>
+                                </Link>
                             </div>
                         </div>
                         <div className="relative">
@@ -133,7 +153,10 @@ export const HeatPump: React.FC = () => {
                 </div>
             </section>
 
-            {/* SECTION 4: SERVICE AREAS (Interactive Map) */}
+            {/* SECTION 4: FAQ SECTION */}
+            <FAQ items={heatPumpFaqs} />
+
+            {/* SECTION 5: SERVICE AREAS (Interactive Map) */}
             <ServiceAreas />
 
             {/* BOTTOM CTA */}
@@ -144,15 +167,15 @@ export const HeatPump: React.FC = () => {
 
                     <div className="flex flex-col sm:flex-row justify-center gap-4">
                         <Link to="/contact" className="w-full sm:w-auto">
-                            <button className="w-full sm:w-auto px-8 py-4 bg-brand-navy hover:bg-[#153760] text-white text-lg font-bold rounded-md transition-colors shadow-lg flex justify-center items-center gap-2">
-                                Get Free Quote
+                            <button className="w-full sm:w-auto px-8 py-4 bg-brand-orange hover:bg-orange-600 text-white text-lg font-bold rounded-md transition-colors shadow-lg flex justify-center items-center gap-2">
+                                Free Installation Estimate
                             </button>
                         </Link>
-                        <a href="tel:6176183366" className="w-full sm:w-auto">
-                            <button className="w-full sm:w-auto px-8 py-4 bg-brand-orange hover:bg-orange-600 text-white text-lg font-bold rounded-md transition-colors shadow-lg flex justify-center items-center gap-2">
-                                Call Now
+                        <Link to="/contact" className="w-full sm:w-auto">
+                            <button className="w-full sm:w-auto px-8 py-4 bg-brand-navy hover:bg-[#153760] text-white text-lg font-bold rounded-md transition-colors shadow-lg flex justify-center items-center gap-2 border border-white/20">
+                                View Efficiency Rebates
                             </button>
-                        </a>
+                        </Link>
                     </div>
                 </div>
             </section>
