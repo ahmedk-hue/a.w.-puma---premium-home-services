@@ -24,6 +24,18 @@ const faqs: FAQItem[] = [
     answer: "For urgent issues like no heat or a broken AC in summer, we offer same-day and next-day emergency service. For non-emergency repairs and installations, we typically schedule within 1–3 business days."
   },
   {
+    question: "What is a heat pump?",
+    answer: "A heat pump is an energy-efficient system that provides both heating and cooling by moving heat between the inside and outside of your home. In the winter, it extracts heat from the outside air and moves it indoors. In the summer, it reverses the process, acting like an air conditioner."
+  },
+  {
+    question: "When should I choose mini splits?",
+    answer: "Mini splits (ductless systems) are an excellent choice for homes that don't have existing ductwork, for room additions, or for specific areas that are difficult to heat or cool properly. They allow for zoned comfort, so you can control individual rooms independently."
+  },
+  {
+    question: "Does a heat pump save on utility bills in Massachusetts?",
+    answer: "Yes! Modern cold-climate heat pumps are significantly more efficient than electric baseboard, oil, or propane systems. In Massachusetts, you can also leverage substantial Mass Save® rebates and incentives to offset the initial installation cost, leading to both immediate and long-term utility savings."
+  },
+  {
     question: "What brands of equipment do you install?",
     answer: "We install and service all major brands including Carrier, Lennox, Trane, Mitsubishi, Rheem, Navien, and more. We'll recommend the best option for your home and budget."
   }
