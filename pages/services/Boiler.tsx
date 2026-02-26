@@ -8,9 +8,9 @@ export const Boiler: React.FC = () => {
     return (
         <div className="bg-white">
             <SEO
-                title="Boiler Repair & Replacement Massachusetts | Steam & Hot Water"
-                description="We specialize in hot water and steam boiler repair, maintenance, and high-efficiency boiler replacement in Massachusetts. 24/7 emergency boiler service."
-                keywords="boiler repair Massachusetts, steam boiler service, hot water boiler installation, high-efficiency boiler replacement"
+                title="Boiler Repair & Installation | HVAC & Mass Save Contractor MA"
+                description="Specializing in steam and hot water boiler services. A.W. Puma is your expert HVAC and Mass Save contractor for efficient heating."
+                keywords="boiler repair Massachusetts, HVAC contractor, Mass Save contractor, steam boiler service, high-efficiency boiler installation"
                 canonical="https://awpumahome.com/services/boilers"
             />
 

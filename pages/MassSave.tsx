@@ -8,9 +8,9 @@ export const MassSave: React.FC = () => {
     return (
         <div className="bg-white">
             <SEO
-                title="Mass Save® Home Energy Assessments | A.W. Puma"
-                description="Take advantage of the no-cost Home Energy Assessment offered by the Sponsors of Mass Save®. Improve comfort, reduce energy use, and access rebates."
-                keywords="Mass Save, home energy assessment Massachusetts, energy efficiency rebates, A.W. Puma Mass Save contractor"
+                title="Mass Save Contractor | Heat Pump Rebates & Assessments | A.W. Puma"
+                description="A.W. Puma is your certified Mass Save Contractor. Access high-efficiency heat pump rebates and no-cost home energy assessments in Massachusetts."
+                keywords="Mass Save contractor, heat pump installation rebates, home energy assessment Massachusetts, energy efficiency incentives, A.W. Puma"
                 canonical="https://awpumahome.com/mass-save"
             />
 

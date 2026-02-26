@@ -8,9 +8,9 @@ export const WaterHeaters: React.FC = () => {
     return (
         <div className="bg-white">
             <SEO
-                title="Water Heater Repair & Installation Massachusetts | A.W. Puma"
-                description="We install, repair, and flush traditional tank, tankless on-demand, and hybrid heat pump water heaters. 24/7 emergency service in MA."
-                keywords="water heater repair Massachusetts, tankless water heater installation, hot water heater replacement, hybrid heat pump water heater"
+                title="Water Heater Repair & Installation | HVAC Contractor MA"
+                description="Expert water heater repair and installation in Massachusetts. A.W. Puma is your trusted HVAC contractor for tankless and heat pump water heaters."
+                keywords="water heater repair Massachusetts, HVAC contractor, Mass Save contractor, tankless water heater installation, hybrid heat pump water heater"
                 canonical="https://awpumahome.com/services/water-heaters"
             />
 

@@ -8,9 +8,9 @@ export const MiniSplits: React.FC = () => {
     return (
         <div className="bg-white">
             <SEO
-                title="Ductless Mini Split Installation & Repair Massachusetts | A.W. Puma"
-                description="Professional ductless mini split installation, maintenance, and emergency repair services throughout Massachusetts. Perfect for older homes without ductwork."
-                keywords="ductless mini split installation, mini split repair Massachusetts, ductless air conditioning, zoned heating and cooling"
+                title="Mini Split Installation | HVAC & Mass Save Contractor MA"
+                description="Professional ductless mini split installation and repair in Massachusetts. Your local HVAC contractor for zoned heating and cooling solutions."
+                keywords="mini split installation, ductless mini splits, HVAC contractor Massachusetts, Mass Save contractor, zoned AC repair"
                 canonical="https://awpumahome.com/services/mini-splits"
             />
 

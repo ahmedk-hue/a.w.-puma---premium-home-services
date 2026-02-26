@@ -8,9 +8,9 @@ export const AirConditioner: React.FC = () => {
     return (
         <div className="bg-white">
             <SEO
-                title="Central AC Repair & Installation Massachusetts | A.W. Puma"
-                description="Get fast, reliable central AC repair, maintenance, and AC installation services in Massachusetts. Expert cooling solutions for your home."
-                keywords="AC repair Massachusetts, central air conditioning installation, emergency AC service, air conditioning maintenance"
+                title="Central AC Repair & Installation | HVAC Contractor MA"
+                description="Professional central AC installation and repair. A.W. Puma is your reliable HVAC contractor for cooling and Mass Save upgrades in Massachusetts."
+                keywords="AC repair Massachusetts, HVAC contractor, Mass Save contractor, central air conditioning installation, heat pump installation"
                 canonical="https://awpumahome.com/services/air-conditioning"
             />
 

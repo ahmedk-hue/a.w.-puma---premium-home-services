@@ -8,9 +8,9 @@ export const HeatPump: React.FC = () => {
     return (
         <div className="bg-white">
             <SEO
-                title="Heat Pump Installation & Repair Massachusetts | Up to $16,000 Rebates"
-                description="Expert heat pump installation and repair in Massachusetts. We provide 24/7 emergency heat pump repair and help you secure up to $16,000 in Mass Save rebates."
-                keywords="heat pump installation, heat pump repair Massachusetts, Mass Save rebates, electric heat pump, 24/7 HVAC repair"
+                title="Heat Pump Installation | HVAC & Mass Save Contractor MA"
+                description="Expert heat pump installation and repair in Massachusetts. As a certified Mass Save Contractor, we help you secure up to $16,000 in rebates."
+                keywords="heat pump installation, HVAC contractor Massachusetts, Mass Save contractor, heat pump repair, energy efficient heating"
                 canonical="https://awpumahome.com/services/heat-pumps"
             />
 

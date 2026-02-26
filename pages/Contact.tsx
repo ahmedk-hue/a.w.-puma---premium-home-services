@@ -7,9 +7,9 @@ export const Contact: React.FC = () => {
     return (
         <div className="bg-white">
             <SEO
-                title="Contact A.W. Puma | Request a Home Service Quote"
-                description="Get in touch with A.W. Puma Home Services for expert heating and cooling work in Greater Boston. Request a free quote today."
-                keywords="contact A.W. Puma, request home service, Boston heating cooling contractor contact, AC service inquiry"
+                title="Contact A.W. Puma | HVAC & Mass Save Contractor Quote"
+                description="Get a free quote for heat pump installation or mini splits from A.W. Puma, your trusted Mass Save contractor in Greater Boston."
+                keywords="contact A.W. Puma, HVAC contractor quote, Mass Save contractor Boston, heat pump installation contact, mini split service inquiry"
                 canonical="https://awpumahome.com/contact"
             />
             {/* HEADER */}
