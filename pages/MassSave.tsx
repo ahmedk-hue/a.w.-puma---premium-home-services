@@ -18,9 +18,16 @@ export const MassSave: React.FC = () => {
             <section className="relative min-h-[60vh] flex flex-col justify-center items-center pt-24 pb-16 bg-brand-navy">
                 <div className="absolute inset-0 z-0 bg-gradient-to-b from-brand-navy/90 to-brand-navy/95" />
                 <div className="relative z-10 max-w-5xl mx-auto px-4 w-full text-center">
-                    <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-green-500/20 border border-green-500/50 backdrop-blur-md mb-8">
-                        <Leaf size={16} className="text-green-400" />
-                        <span className="text-sm font-bold text-green-400 uppercase tracking-widest">Participating Contractor</span>
+                    <div className="flex flex-col md:flex-row items-center justify-center gap-6 mb-8">
+                        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-green-500/20 border border-green-500/50 backdrop-blur-md">
+                            <Leaf size={16} className="text-green-400" />
+                            <span className="text-sm font-bold text-green-400 uppercase tracking-widest">Participating Contractor</span>
+                        </div>
+                        <img
+                            src="/images/logos/mass-save-partner.png"
+                            alt="Mass Save Partner"
+                            className="h-12 w-auto brightness-0 invert opacity-90"
+                        />
                     </div>
 
                     <h1 className="text-4xl md:text-6xl font-serif font-bold tracking-tight text-white mb-6 leading-tight">
@@ -186,6 +193,31 @@ export const MassSave: React.FC = () => {
                                     </div>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* Final Offer CTA */}
+            <section className="py-24 bg-brand-navy relative overflow-hidden">
+                <div className="absolute inset-0 z-0">
+                    <div className="absolute top-0 left-0 w-96 h-96 bg-brand-orange/10 rounded-full -translate-x-1/2 -translate-y-1/2 blur-3xl"></div>
+                    <div className="absolute bottom-0 right-0 w-96 h-96 bg-brand-orange/10 rounded-full translate-x-1/2 translate-y-1/2 blur-3xl"></div>
+                </div>
+
+                <div className="max-w-7xl mx-auto px-4 relative z-10 text-center">
+                    <h2 className="text-4xl md:text-5xl font-serif font-bold text-white mb-8">Ready to Upgrade?</h2>
+                    <p className="text-xl text-gray-300 mb-12 max-w-3xl mx-auto leading-relaxed">
+                        Don't miss out on the current Mass Save® incentives. Combined with AW Puma's professional installation, you can secure up to <strong>$16,000 in whole-home rebates</strong> and <strong>$8,500 in standard rebates</strong>.
+                    </p>
+                    <div className="flex flex-col sm:flex-row justify-center items-center gap-6">
+                        <Link to="/contact">
+                            <Button size="lg" icon={<CalendarCheck size={18} />} className="px-10 py-5 text-xl">
+                                Claim Your Rebate Now
+                            </Button>
+                        </Link>
+                        <div className="flex items-center gap-3">
+                            <img src="/images/logos/mass-save-partner.png" alt="Mass Save Partner" className="h-16 w-auto brightness-0 invert" />
                         </div>
                     </div>
                 </div>
