@@ -37,7 +37,7 @@ const faqs: FAQItem[] = [
   },
   {
     question: "What brands of equipment do you install?",
-    answer: "We install and service all major brands including Carrier, Lennox, Trane, Mitsubishi, Rheem, Navien, and more. We'll recommend the best option for your home and budget."
+    answer: "Stop Searching upgrade your current system to an energy efficient heat pump. A.W. Puma has you covered. Free estimates on new installations. Get Free Quote"
   }
 ];
 
