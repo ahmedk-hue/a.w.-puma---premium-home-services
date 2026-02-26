@@ -51,59 +51,6 @@ export const MassSave: React.FC = () => {
                 </div>
             </section>
 
-            {/* Special Incentives & Offers */}
-            <section className="py-20 bg-white overflow-hidden">
-                <div className="max-w-7xl mx-auto px-4">
-                    <div className="bg-brand-navy rounded-3xl overflow-hidden shadow-2xl relative">
-                        {/* Decorative Background Elements */}
-                        <div className="absolute top-0 right-0 w-64 h-64 bg-brand-orange/10 rounded-full -translate-y-1/2 translate-x-1/2 blur-3xl"></div>
-                        <div className="absolute bottom-0 left-0 w-64 h-64 bg-brand-orange/5 rounded-full translate-y-1/2 -translate-x-1/2 blur-3xl"></div>
-
-                        <div className="relative z-10 grid lg:grid-cols-2 gap-12 items-center p-8 md:p-16">
-                            <div>
-                                <div className="inline-flex items-center gap-2 px-3 py-1 bg-brand-orange text-white text-xs font-bold uppercase tracking-widest rounded-full mb-6">
-                                    <ShieldCheck size={14} /> Limited Time Offers
-                                </div>
-                                <h2 className="text-4xl md:text-5xl font-serif font-bold text-white mb-6 leading-tight">
-                                    Maximize Your <span className="text-brand-orange">Savings</span>
-                                </h2>
-                                <p className="text-xl text-gray-300 mb-10 leading-relaxed font-light">
-                                    Take advantage of massive state-level incentives and internal AW Puma discounts today.
-                                </p>
-
-                                <div className="space-y-6">
-                                    <div className="flex items-center gap-6 p-6 bg-white/5 border border-white/10 rounded-2xl hover:bg-white/10 transition-colors group">
-                                        <div className="text-4xl md:text-5xl font-bold text-brand-orange group-hover:scale-110 transition-transform">$8,500</div>
-                                        <div className="text-white">
-                                            <div className="text-xl font-bold">Standard Rebate</div>
-                                            <div className="text-gray-400">Available for qualifying heat pump installations</div>
-                                        </div>
-                                    </div>
-                                    <div className="flex items-center gap-6 p-6 bg-white/5 border border-white/10 rounded-2xl hover:bg-white/10 transition-colors group">
-                                        <div className="text-4xl md:text-5xl font-bold text-brand-orange group-hover:scale-110 transition-transform">30% OFF</div>
-                                        <div className="text-white">
-                                            <div className="text-xl font-bold">Tax Credit Savings</div>
-                                            <div className="text-gray-400">Federal incentives on energy-efficient upgrades</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="relative flex justify-center lg:justify-end">
-                                <div className="relative w-full max-w-md">
-                                    <div className="absolute inset-0 bg-brand-orange/20 rounded-full blur-3xl"></div>
-                                    <img
-                                        src="/images/mascots/mascot-mass-clothing.png"
-                                        alt="AW Puma Mascot"
-                                        className="relative z-10 w-full h-auto drop-shadow-2xl hover:scale-105 transition-transform duration-500"
-                                    />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
             {/* The Process */}
             <section className="py-24 bg-gray-50">
                 <div className="max-w-7xl mx-auto px-4">
@@ -198,26 +145,77 @@ export const MassSave: React.FC = () => {
                 </div>
             </section>
 
-            {/* Final Offer CTA */}
+            {/* Special Incentives & Offers - MOVED TO BOTTOM */}
             <section className="py-24 bg-brand-navy relative overflow-hidden">
                 <div className="absolute inset-0 z-0">
-                    <div className="absolute top-0 left-0 w-96 h-96 bg-brand-orange/10 rounded-full -translate-x-1/2 -translate-y-1/2 blur-3xl"></div>
-                    <div className="absolute bottom-0 right-0 w-96 h-96 bg-brand-orange/10 rounded-full translate-x-1/2 translate-y-1/2 blur-3xl"></div>
+                    <div className="absolute top-0 right-0 w-96 h-96 bg-brand-orange/10 rounded-full -translate-y-1/2 translate-x-1/2 blur-3xl"></div>
+                    <div className="absolute bottom-0 left-0 w-96 h-96 bg-brand-orange/5 rounded-full translate-y-1/2 -translate-x-1/2 blur-3xl"></div>
                 </div>
 
-                <div className="max-w-7xl mx-auto px-4 relative z-10 text-center">
-                    <h2 className="text-4xl md:text-5xl font-serif font-bold text-white mb-8">Ready to Upgrade?</h2>
-                    <p className="text-xl text-gray-300 mb-12 max-w-3xl mx-auto leading-relaxed">
-                        Don't miss out on the current Mass Save® incentives. Combined with AW Puma's professional installation, you can secure up to <strong>$16,000 in whole-home rebates</strong> and <strong>$8,500 in standard rebates</strong>.
-                    </p>
-                    <div className="flex flex-col sm:flex-row justify-center items-center gap-6">
-                        <Link to="/contact">
-                            <Button size="lg" icon={<CalendarCheck size={18} />} className="px-10 py-5 text-xl">
-                                Claim Your Rebate Now
-                            </Button>
-                        </Link>
-                        <div className="flex items-center gap-3">
-                            <img src="/images/logos/mass-save-partner.png" alt="Mass Save Partner" className="h-16 w-auto brightness-0 invert" />
+                <div className="max-w-7xl mx-auto px-4 relative z-10">
+                    <div className="text-center mb-16">
+                        <div className="inline-flex items-center gap-2 px-3 py-1 bg-brand-orange text-white text-xs font-bold uppercase tracking-widest rounded-full mb-6">
+                            <ShieldCheck size={14} /> Limited Time Offers
+                        </div>
+                        <h2 className="text-4xl md:text-6xl font-serif font-bold text-white mb-6 leading-tight">
+                            Mass Save® <span className="text-brand-orange">Incentives</span>
+                        </h2>
+                        <p className="text-xl text-gray-300 max-w-2xl mx-auto font-light">
+                            Take advantage of massive state-level incentives and professional insulation services to improve your home's comfort and value.
+                        </p>
+                    </div>
+
+                    <div className="grid lg:grid-cols-2 gap-12 items-center">
+                        <div className="space-y-6">
+                            <div className="bg-white/5 border border-white/10 rounded-2xl p-8 hover:bg-white/10 transition-colors group">
+                                <div className="flex items-center gap-6">
+                                    <div className="text-5xl font-bold text-brand-orange">$8,500</div>
+                                    <div>
+                                        <div className="text-2xl font-bold text-white uppercase tracking-wider">Standard Rebate</div>
+                                        <div className="text-gray-400">For qualifying high-efficiency heat pump installations</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className="bg-white/5 border border-white/10 rounded-2xl p-8 hover:bg-white/10 transition-colors group">
+                                <div className="flex items-center gap-6">
+                                    <div className="text-5xl font-bold text-brand-orange">30% OFF</div>
+                                    <div>
+                                        <div className="text-2xl font-bold text-white uppercase tracking-wider">Tax Credit Savings</div>
+                                        <div className="text-gray-400">Federal incentives on energy-efficient upgrades</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className="bg-brand-orange/10 border border-brand-orange/30 rounded-2xl p-8 transition-colors group">
+                                <div className="flex items-center gap-6">
+                                    <div className="text-5xl font-bold text-brand-orange">$16k+</div>
+                                    <div>
+                                        <div className="text-2xl font-bold text-white uppercase tracking-wider">Whole-Home Rebate</div>
+                                        <div className="text-gray-400">Maximum savings for comprehensive energy upgrades</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className="pt-8 flex flex-col sm:flex-row items-center gap-6">
+                                <Link to="/contact">
+                                    <Button size="lg" icon={<CalendarCheck size={18} />} className="px-10 py-5 text-xl w-full sm:w-auto">
+                                        Claim Your Rebate Now
+                                    </Button>
+                                </Link>
+                                <img src="/images/logos/mass-save-partner.png" alt="Mass Save Partner" className="h-16 w-auto brightness-0 invert" />
+                            </div>
+                        </div>
+
+                        <div className="relative flex justify-center lg:justify-end">
+                            <div className="relative w-full max-w-md">
+                                <div className="absolute inset-0 bg-brand-orange/20 rounded-full blur-3xl"></div>
+                                <img
+                                    src="/images/mascots/mascot-mass-clothing.png"
+                                    alt="AW Puma Mascot"
+                                    className="relative z-10 w-full h-auto drop-shadow-2xl hover:scale-105 transition-transform duration-500"
+                                />
+                            </div>
                         </div>
                     </div>
                 </div>
