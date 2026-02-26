@@ -24,7 +24,7 @@ export const MassSave: React.FC = () => {
                     </div>
 
                     <h1 className="text-4xl md:text-6xl font-serif font-bold tracking-tight text-white mb-6 leading-tight">
-                        <a href="https://www.masssave.com/" target="_blank" rel="noopener noreferrer" className="text-brand-orange hover:text-brand-gold transition-colors underline decoration-brand-orange/30 underline-offset-8">
+                        <a href="https://www.masssave.com/" target="_blank" rel="noopener noreferrer" className="text-brand-orange hover:text-brand-gold transition-colors">
                             Mass Save®
                         </a>
                         <br />Home Energy Assessments
@@ -40,6 +40,59 @@ export const MassSave: React.FC = () => {
                                 Schedule Assessment
                             </Button>
                         </Link>
+                    </div>
+                </div>
+            </section>
+
+            {/* Special Incentives & Offers */}
+            <section className="py-20 bg-white overflow-hidden">
+                <div className="max-w-7xl mx-auto px-4">
+                    <div className="bg-brand-navy rounded-3xl overflow-hidden shadow-2xl relative">
+                        {/* Decorative Background Elements */}
+                        <div className="absolute top-0 right-0 w-64 h-64 bg-brand-orange/10 rounded-full -translate-y-1/2 translate-x-1/2 blur-3xl"></div>
+                        <div className="absolute bottom-0 left-0 w-64 h-64 bg-brand-orange/5 rounded-full translate-y-1/2 -translate-x-1/2 blur-3xl"></div>
+
+                        <div className="relative z-10 grid lg:grid-cols-2 gap-12 items-center p-8 md:p-16">
+                            <div>
+                                <div className="inline-flex items-center gap-2 px-3 py-1 bg-brand-orange text-white text-xs font-bold uppercase tracking-widest rounded-full mb-6">
+                                    <ShieldCheck size={14} /> Limited Time Offers
+                                </div>
+                                <h2 className="text-4xl md:text-5xl font-serif font-bold text-white mb-6 leading-tight">
+                                    Maximize Your <span className="text-brand-orange">Savings</span>
+                                </h2>
+                                <p className="text-xl text-gray-300 mb-10 leading-relaxed font-light">
+                                    Take advantage of massive state-level incentives and internal AW Puma discounts today.
+                                </p>
+
+                                <div className="space-y-6">
+                                    <div className="flex items-center gap-6 p-6 bg-white/5 border border-white/10 rounded-2xl hover:bg-white/10 transition-colors group">
+                                        <div className="text-4xl md:text-5xl font-bold text-brand-orange group-hover:scale-110 transition-transform">$8,500</div>
+                                        <div className="text-white">
+                                            <div className="text-xl font-bold">Standard Rebate</div>
+                                            <div className="text-gray-400">Available for qualifying heat pump installations</div>
+                                        </div>
+                                    </div>
+                                    <div className="flex items-center gap-6 p-6 bg-white/5 border border-white/10 rounded-2xl hover:bg-white/10 transition-colors group">
+                                        <div className="text-4xl md:text-5xl font-bold text-brand-orange group-hover:scale-110 transition-transform">30% OFF</div>
+                                        <div className="text-white">
+                                            <div className="text-xl font-bold">Tax Credit Savings</div>
+                                            <div className="text-gray-400">Federal incentives on energy-efficient upgrades</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className="relative flex justify-center lg:justify-end">
+                                <div className="relative w-full max-w-md">
+                                    <div className="absolute inset-0 bg-brand-orange/20 rounded-full blur-3xl"></div>
+                                    <img
+                                        src="/images/mascots/mascot-mass-clothing.png"
+                                        alt="AW Puma Mascot"
+                                        className="relative z-10 w-full h-auto drop-shadow-2xl hover:scale-105 transition-transform duration-500"
+                                    />
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>

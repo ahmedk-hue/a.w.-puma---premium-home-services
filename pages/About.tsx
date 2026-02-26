@@ -55,9 +55,16 @@ export const About: React.FC = () => {
                             </p>
                         </div>
 
-                        <div className="pt-6 border-t border-gray-100">
-                            <div className="font-serif text-2xl text-brand-navy">Albert Puma</div>
-                            <div className="text-sm text-brand-gray uppercase tracking-widest font-bold">Founder & Principal</div>
+                        <div className="pt-6 border-t border-gray-100 flex items-center justify-between">
+                            <div>
+                                <div className="font-serif text-2xl text-brand-navy">Albert Puma</div>
+                                <div className="text-sm text-brand-gray uppercase tracking-widest font-bold">Founder & Principal</div>
+                            </div>
+                            <img
+                                src="/images/mascots/mascot-standard.png"
+                                alt="AW Puma Mascot"
+                                className="w-24 h-auto opacity-80 group-hover:opacity-100 transition-opacity"
+                            />
                         </div>
                     </div>
                 </div>

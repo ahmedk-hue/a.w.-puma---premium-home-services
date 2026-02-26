@@ -73,7 +73,10 @@ export const Contact: React.FC = () => {
                 </div>
 
                 {/* RIGHT: FORM */}
-                <div className="bg-gray-50 p-8 md:p-10 rounded-sm shadow-sm border border-gray-100">
+                <div className="bg-gray-50 p-8 md:p-10 rounded-sm shadow-sm border border-gray-100 relative overflow-hidden">
+                    <div className="absolute top-4 right-4 w-20 h-20 opacity-10 pointer-events-none">
+                        <img src="/images/mascots/mascot-thumbs-up.png" alt="" className="w-full h-full object-contain" />
+                    </div>
                     <h2 className="text-2xl font-serif font-bold text-brand-navy mb-8">Send a Message</h2>
                     <form className="space-y-6">
                         <div className="grid md:grid-cols-2 gap-6">
