@@ -3,6 +3,7 @@ import { Button } from '../../components/ui/Button';
 import { SEO } from '../../components/SEO';
 import { Link } from 'react-router-dom';
 import { ShieldCheck, Wind, Snowflake, Wrench, ThermometerSnowflake, Ruler, MapPin, CheckCircle2 } from 'lucide-react';
+import { ServiceAreas } from '../../components/ServiceAreas';
 
 export const AirConditioner: React.FC = () => {
     return (
@@ -142,29 +143,8 @@ export const AirConditioner: React.FC = () => {
                 </div>
             </section>
 
-            {/* SECTION 4: SERVICE AREAS */}
-            <section className="py-24 bg-blue-900 text-white">
-                <div className="max-w-5xl mx-auto px-4 text-center">
-                    <MapPin size={48} className="text-blue-400 mx-auto mb-6" />
-                    <h2 className="text-3xl md:text-4xl font-serif font-bold mb-6">Massachusetts Counties We Serve</h2>
-                    <p className="text-lg text-blue-100 leading-relaxed max-w-2xl mx-auto mb-12">
-                        Keep your home cool with our trusted AC services across:
-                    </p>
-
-                    <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-left max-w-4xl mx-auto mb-12">
-                        {["Suffolk County", "Middlesex County", "Norfolk County", "Plymouth County", "Essex County", "Worcester County", "Bristol County"].map((county, index) => (
-                            <div key={index} className="bg-white/5 border border-white/10 rounded-lg p-4 flex items-center justify-center gap-3 hover:bg-white/10 transition-colors">
-                                <CheckCircle2 size={20} className="text-blue-400 flex-shrink-0" />
-                                <span className="font-semibold text-lg">{county}</span>
-                            </div>
-                        ))}
-                    </div>
-
-                    <Link to="/contact" className="inline-block">
-                        <Button variant="primary" size="lg" className="bg-blue-600 hover:bg-blue-700 text-white border-0">Check Service Availability</Button>
-                    </Link>
-                </div>
-            </section>
+            {/* SECTION 4: SERVICE AREAS (Interactive Map) */}
+            <ServiceAreas />
 
             {/* BOTTOM CTA */}
             <section className="py-24 bg-blue-50">
